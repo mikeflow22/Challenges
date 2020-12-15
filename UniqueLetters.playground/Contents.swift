@@ -18,5 +18,16 @@ var str = "Hello, playground"
  assert(challenge1(input: "Hello, world") == false, "Challenge 1 failed")
  ”
 
- Excerpt From: Paul Hudson. “Swift Coding Challenges.” Apple Books. 
+ Excerpt From: Paul Hudson. “Swift Coding Challenges.” Apple Books.
  */
+
+func noDuplicate(string: String) -> Bool {
+    //Here I recognized that a string is an array of characters, so I can get the count.
+    //I also recognize that Sets do not hold duplicates.
+    //So I can compare the string count to the set count
+    
+    return string.count == Set(string).count
+}
+
+noDuplicate(string: "No duplicates")
+noDuplicate(string: "AaBbCc")
