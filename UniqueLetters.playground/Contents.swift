@@ -31,3 +31,6 @@ func noDuplicate(string: String) -> Bool {
 
 noDuplicate(string: "No duplicates")
 noDuplicate(string: "AaBbCc")
+assert(noDuplicate(string: "No duplicates") == true, "Challenge 1 failed")
+
+assert(noDuplicate(string: "AaBbCc") == true, "Challenge 1 failed")
