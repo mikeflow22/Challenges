@@ -21,8 +21,8 @@ func twoDemensional(array: [[Int]]) -> [Int] {
     //On first thought I'm thinking that there is a collection's method that will flatten the two dimensional array
     //and then we can sort the single array
     
-   
-    return array.flatMap({$0}).sorted()
+    //on second thought I think it would be eaiser to use the joined() method - I think this is faster
+    return array.joined().sorted()
 }
 
 print(twoDemensional(array: [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]))
