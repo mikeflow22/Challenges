@@ -19,3 +19,14 @@ import Foundation
 
  Excerpt From: Paul Hudson. “Swift Coding Challenges.” Apple Books.
  */
+
+func flipItAndReverseIt(input: String) -> Bool {
+    //On first thought, I do believe that there is a method on collections, specifically arrays, that reverses it.
+    //I have to make both variables lowerecase
+    
+    //Take away from this lesson is to construct or initialize a string from the value of what's reversed.
+    return input.lowercased() == String(input.reversed()).lowercased()
+}
+
+print(flipItAndReverseIt(input: "Rats live on no evil star"))
+print(flipItAndReverseIt(input: "Hello World"))
