@@ -20,3 +20,19 @@ import Foundation
  
  */
 
+
+
+func expandedForm(input: Int) -> String {
+    //ones
+    //tens
+    //hundreds
+    //thousands
+    
+    let ten: Int? = input / 10
+    let remainder = input % 10
+    print(remainder)
+    print(ten)
+    return "something"
+    
+}
+print(expandedForm(input: 28))
