@@ -74,7 +74,6 @@ func expandedForm1(input: Int) -> String {
         output = "\(thousands) + \(hundreds) + \(tens) + \(ones)"
     case 5:
         tenThousands = ((input / 10000) * 10000)
-        print("\(input % 10000)")
         thousands = ((input - tenThousands) / 1000) * 1000
         hundreds = ((input - tenThousands - thousands) / 100) * 100
         tens = (input - tenThousands - thousands - hundreds) / (10) * 10
