@@ -50,10 +50,6 @@ func expandedForm(input: Int) -> String {
 
 
 func expandedForm1(input: Int) -> String {
-    //ones
-    //tens
-    //hundreds
-    //thousands
     var output: String = ""
     var ones: Int
     var tens: Int
@@ -87,15 +83,6 @@ func expandedForm1(input: Int) -> String {
     default:
         output = "something wrong happend"
     }
-    
-    
-    
-//    var tens: Int?
-//    tens = input / 10
-//    print(tens)
-//    let remainder = input % 10
-//    output = "\(remainder)"
-//    print(remainder)
     return output
     
 }
