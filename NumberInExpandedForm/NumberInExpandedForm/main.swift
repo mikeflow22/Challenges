@@ -47,4 +47,57 @@ func expandedForm(input: Int) -> String {
     return output
     
 }
-print(expandedForm(input: 70000))
+
+
+func expandedForm1(input: Int) -> String {
+    //ones
+    //tens
+    //hundreds
+    //thousands
+    var output: String = ""
+    var ones: Int
+    var tens: Int
+    var hundreds: Int
+    var thousands: Int
+    var tenThousands: Int
+    switch String(input).count {
+    case 1:
+        output = "\(input / 1)"
+    case 2:
+        output = "\((input / 10) * 10) + \(input % 10)"
+    case 3:
+        hundreds = ((input / 100) * 100)
+        tens = (input - hundreds) / (10) * 10
+        ones = (input - hundreds - tens) / 1
+        output = "\(hundreds) + \(tens) + \(ones)"
+    case 4:
+        thousands = ((input / 1000) * 1000)
+        hundreds = ((input - thousands) / 100) * 100
+        tens = (input - thousands - hundreds) / (10) * 10
+        ones = (input - thousands - hundreds - tens) / 1
+        output = "\(thousands) + \(hundreds) + \(tens) + \(ones)"
+    case 5:
+        tenThousands = ((input / 10000) * 10000)
+        print("\(input % 10000)")
+        thousands = ((input - tenThousands) / 1000) * 1000
+        hundreds = ((input - tenThousands - thousands) / 100) * 100
+        tens = (input - tenThousands - thousands - hundreds) / (10) * 10
+        ones = (input - tenThousands - thousands - hundreds - tens) / 1
+        output = "\(tenThousands) + \(thousands) + \(hundreds) + \(tens) + \(ones)"
+    default:
+        output = "something wrong happend"
+    }
+    
+    
+    
+//    var tens: Int?
+//    tens = input / 10
+//    print(tens)
+//    let remainder = input % 10
+//    output = "\(remainder)"
+//    print(remainder)
+    return output
+    
+}
+
+print(expandedForm1(input: 97426))
