@@ -50,12 +50,31 @@ func expandedForm(input: Int) -> String {
 
 
 func expandedForm1(input: Int) -> String {
+    
+    /*
+     break apart
+     while loop
+     grab the 1's % 10
+     add to array
+     remove by / 10
+     
+     [6, 2, 4, 7, 9]
+     [9, 7, 4, 2, 6]
+     put back together
+     ""
+     start at end
+     for 1 less than num in array add a zero
+     "90000"
+     2
+     "7000"
+     */
     var output: String = ""
     var ones: Int
     var tens: Int
     var hundreds: Int
     var thousands: Int
     var tenThousands: Int
+
     switch String(input).count {
     case 1:
         output = "\(input / 1)"
