@@ -21,7 +21,7 @@ import Foundation
 
  Excerpt From: Paul Hudson. “Swift Coding Challenges.” Apple Books.
  */
-
+///Complexity: Linear O(n) As the string gets longer so does the time
 func sameCharacters(input1: String, input2: String) -> Bool {
     //first I want to check to see if the strings match in length
     guard input1.count == input2.count else {
