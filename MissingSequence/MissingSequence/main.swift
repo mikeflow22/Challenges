@@ -7,5 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
-
+func find_missing(sequence:[Int]) -> Int {
+    
+    return 9
+}
